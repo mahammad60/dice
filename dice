@@ -1,0 +1,42 @@
+import random
+print("three choices each")
+
+# get three dices and make the user to be able to roll three times the dices 
+dice = [1,2,3,4,5,6]
+dice1 = [1,2,3,4,5,6]
+dice2 = [1,2,3,4,5,6]
+
+roll = random.choice(dice)
+roll1 = random.choice(dice1)
+roll2= random.choice(dice2)
+
+# create a score counter to be able to count the score of the dices
+score_counter = roll1+roll+roll2
+score_count1 = roll1
+score_count2 =roll2
+score_count3 = roll+roll1
+#print out the score as well as dices
+
+# get the user to choose how many times they want to roll the dices 1-3
+try:
+  user = int(input("type in how many times you want to roll the dice: from 1-3 times  "))
+  if user == 1:
+      print("your score is", roll)
+  elif user == 2:
+      print(roll)
+      print(roll1)
+      print("your score is", score_count3 )
+  elif user == 3:
+      print(roll2)
+      print(roll1)
+      print(roll)
+      print("your score is", score_counter)
+
+ 
+
+
+
+
+except ValueError:
+  print("please type in a number not words for next time, thank you")
+ 
